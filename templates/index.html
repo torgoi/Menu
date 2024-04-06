@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+<ul>
+{% for l in poko %}
+    <li>
+        <h2>{{ l.title }}</h2>
+        <p>{{ l.age }}</p>
+        <div class="clear"></div>
+        <p class="link-read-post"><a href="#">Читать пост</a> </p>
+    </li>
+{% endfor %}
+</ul>
+{% endblock %}    

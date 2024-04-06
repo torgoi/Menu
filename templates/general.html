@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{% url 'general' %}" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button type="Submit" name="save" >Save</button>
+    <br>
+    {% for i in poko %}
+{{ i.title }}
+    {{ i.age }}
+        <button formnovalidate type="submit" name="delete" value="{{ i.id }}">Delete</button>
+        <hr>
+{% endfor %}
+</form>
+
+</body>
+</html>
