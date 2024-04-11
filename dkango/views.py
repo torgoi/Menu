@@ -42,4 +42,9 @@ def login(request):
     return HttpResponse('Login')
 
 
+
+def salamhalal(request):
+    return HttpResponse('Salam Halal')
+        
+
 # Create your views here.
