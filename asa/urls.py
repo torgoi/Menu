@@ -23,7 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',index),
     path('general/', general, name='general'),
-
+    path('koko',login),
     path('add/',addpage, name='addpage'),
     path('login/',login, name='login'),
     path('contact/',contact, name='contact'),
